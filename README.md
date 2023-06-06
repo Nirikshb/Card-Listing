@@ -3,8 +3,8 @@ NOTE - Vercel/Netlify is having some issues deplying it properly. I would highly
 
 Step 1 : Clone it.
 
-Step 2 : copy and paste it in terminal npm install react
-
+Step 2 : Copy and paste  npm install react in the terminal
+ 
 
 Step 3 : npm run start
 
