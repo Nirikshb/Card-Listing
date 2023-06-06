@@ -1,3 +1,6 @@
+NOTE - Vercel/Netlify is having some issues deplying it properly. I would highly suggest just run it using npm start. 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
