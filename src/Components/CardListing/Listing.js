@@ -3,6 +3,7 @@ import Card from "../Cards/Card";
 import fetchData from "../../FetchData";
 import Tab from "../Tab/Tab";
 
+
 const Listing = () => {
  // Storing all the cards
  const [cards, setCards] = useState([]); 
@@ -46,26 +47,22 @@ const Listing = () => {
     };
   }, [filteredCards]);
 
+  
   const fetchCards = async () => {
     setLoading(true);
     try {
-        //fetching new cards
       const response = await fetchData(page);
       const newCards = response.data;
-    //   console.log(newCards);
-      //updating data with fetched card
       setCards((prevCards) => [...prevCards, ...newCards]);
-      //if we scrolled until end add another page.
       setPage((prevPage) => prevPage + 1);
       setHasMore(newCards.length > 0);
-      //if the new card length is more print it.
     } catch (error) {
       console.error("Error fetching cards:", error);
     } finally {
       setLoading(false);
     }
   };
-
+  
   const handleTabClick = (tab) => {
     setActiveTab(tab);
     filterCards(tab);
