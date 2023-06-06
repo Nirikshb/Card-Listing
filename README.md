@@ -1,4 +1,7 @@
 NOTE - Vercel/Netlify is having some issues deplying it properly. I would highly suggest just clone and run it using npm start. 
+Step 1 : Clone it.
+Step 2 : copy and paste it in terminal npm install react
+Step 3 : npm run start
 
 
 # Getting Started with Create React App
