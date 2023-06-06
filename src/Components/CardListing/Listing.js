@@ -76,7 +76,7 @@ const Listing = () => {
 
   const filterCards = (tab = activeTab, term = searchTerm) => {
     let filtered = [];
-
+  
     if (tab === "Your") {
       filtered = cards.filter((card) => card.owner_id === 1);
     } else if (tab === "All") {
@@ -84,11 +84,11 @@ const Listing = () => {
     } else if (tab === "Blocked") {
       filtered = cards.filter((card) => card.status === "blocked");
     }
-
+  
     filtered = filtered.filter((card) =>
       card.name.toLowerCase().includes(term.toLowerCase())
     );
-
+  
     setFilteredCards(filtered);
   };
 
