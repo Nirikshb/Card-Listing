@@ -1,4 +1,4 @@
-NOTE - Vercel/Netlify is having some issues deplying it properly. I would highly suggest just run it using npm start. 
+NOTE - Vercel/Netlify is having some issues deplying it properly. I would highly suggest just clone and run it using npm start. 
 
 
 # Getting Started with Create React App
